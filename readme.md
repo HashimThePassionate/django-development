@@ -52,4 +52,10 @@ C:\Users\DELL\AppData\Local\Microsoft\WindowsApps\python.exe
  python -m pip install requests==2.6.0
 ```
 - install python specific libraries version
+### How to get Django ?
+Get the latest official version
+```python
+The latest official version is 5.0.1. Read the 5.0.1 release notes, then install it with pip:
+pip install Django==5.0.1
+```
 - deactivate
