@@ -1,58 +1,64 @@
-
 # Django
 Django is a Python framework that makes it easier to create web sites using Python.Django takes care of the difficult stuff so that
 you can concentrate on building your web applications.
 ## Key Features of Django:
-Django is a back-end server side web framework.
-
-Django is free, open source and written in Python.
-
-Django makes it easier to build web pages using Python.
+- Django is a back-end server side web framework.
+- Django is free, open source and written in Python.
+- Django makes it easier to build web pages using Python.
 
 ## Django Requires Python
 To check if your system has Python installed, run this command in the command prompt:
 ```
 python --version
-
 ```
-## PIP
-To install Django, you must use a package manager like PIP, which is included in Python from ``version 3.4``.
-To check if your system has PIP installed, run this command in the command prompt:
+## Pip python package manager like npm
+To install Django, you must use a package manager like pip, which is included in Python when simply install python.
+To check if your system has pip installed, run this command in the command prompt:
 ```
 pip --version
-
 ```
-
 ## Virtual Environment
-It is suggested to have a dedicated virtual environment for each Django project, and one way to manage a virtual environment is ``venv``, which is included in Python.
+It is suggested to have a dedicated virtual environment for each Django project, and one way to manage a virtual environment is ``virtualenv``package, which is included in Python
 
-The name of the virtual environment is your choice, for example ``virtual``.
-Type the following in the command prompt, remember to navigate to where you want to create your project:
+## check virtualenv package is installed or not 
+```python 
+pip list
 ```
-py -m venv virtual
-
+## if virtualenv is not installed that install this package
+```python 
+pip install virtualenv
 ```
-This will set up a virtual environment, and create a folder named "virtual" with subfolders and files, like this:
+## check version of virtualenv
+```python 
+virtualenv --version
 ```
+## Now create a virtual environment
+- Create a directory for example Django-development
+- cd Django-development or open in vs code and type in cmd
+```python
+python -m virtualenv virtual
+```
+## Now see a folder virtual is created and inside this virtual you will folders structure like this
+<pre>
 virtual
-  Include
-  Lib
-  Scripts
-  pyvenv.cfg
+    |____ lib
+    |        |___site-packages   
+    |            |___ .......
+    |____ Scripts
+    |           |____ ....... 
+    |____ pyvenv.cfg  
+</pre>
+## Then you have to activate the environment, by typing this command:
+- On Window
+```
+virtual\Scripts\activate
 
 ```
-Then you have to activate the environment, by typing this command:
-
+## Once the environment is activated, you will see this result in the command prompt:
+```python
+(virtual) C:\Users\aaaa\Desktop\Batches\Django_Development
 ```
-virtual\Scripts\activate.bat
 
-```
-Once the environment is activated, you will see this result in the command prompt:
-
-```
-(virtual) C:\Users\Your Name>
-
-```
 ## Install Django
 Now, that we have created a virtual environment, we are ready to install Django.
 
