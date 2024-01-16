@@ -65,11 +65,11 @@ virtual\Scripts\activate
 deactivate
 ```
 ## By default python version 3.11 installed in this virtual environment
-. Because python 3.11 version installed globally on my machine.
-. to install different python version 
-. go to [python.org](https://www.python.org/downloads/) and install different  version globally
-. we are going to install python 3.12 separately
-. so have a look to our environment variables when two different python versions is installed
+- Because python 3.11 version installed globally on my machine
+- to install different python version 
+- go to [python.org](https://www.python.org/downloads/) and install different  version globally
+- we are going to install python 3.12 separately
+- so have a look to our environment variables when two different python versions is installed
 <pre>
 C:\Users\aaaa\AppData\Local\Programs\Python\Python311\Scripts\;
 C:\Users\aaaa\AppData\Local\Programs\Python\Python311\;
