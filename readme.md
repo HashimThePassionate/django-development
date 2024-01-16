@@ -12,9 +12,7 @@ To check if your system has Python installed, run this command in the command pr
 python --version
 ```
 ## if you learn about python please go to this repo step by step
-```
-[Pythonforpassionate](https://github.com/HashimThePassionate/Python-For-Absolute-Beginners)
-```
+**[Pythonforpassionate](https://github.com/HashimThePassionate/Python-For-Absolute-Beginners)**
 ## Pip python package manager like npm
 To install Django, you must use a package manager like pip, which is included in Python when simply install python.
 To check if your system has pip installed, run this command in the command prompt:
