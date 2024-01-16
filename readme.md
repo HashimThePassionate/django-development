@@ -58,83 +58,71 @@ virtual\Scripts\activate
 ```python
 (virtual) C:\Users\aaaa\Desktop\Batches\Django_Development
 ```
-
-## Install Django
-Now, that we have created a virtual environment, we are ready to install Django.
-
-**Note: Remember to install Django while you are in the `` virtual environment `` !**
-
-Django is installed using pip, with this command:
-```
-(virtual) C:\Users\Your Name>py -m pip install Django
-```
-## We can create different virtual environments with different Python Versions ! 
-Steps for this are : 
-## Step1
-- Create a directory for example Dj
-- cd Dj or open in vs code
-### If ``virtualenv`` is not present install it
-```python 
-pip install virtualenv
-```
-### To check it's version and for confirmation use
-```python 
-virtualenv --version
-```
-### Creating a Virtual Environment named "tutorial-env"
-```python
-python -m venv tutorial-env
-```
-### Checking Python's version in this environment
-```python
-python --version
-```
-### Activating our Virtual Environment
-```python
-C:\Users\DELL\Desktop\RoadMap\DJ\virtualenv.txt\Scripts\activate
-```
-### Deactivating this environment incase of having multiple environments to work with 
+## deactivate virtual environment simple type in cmd
 ```python
 deactivate
 ```
-### By default if suppose python vesion 3.11 is installed on your C drive, it shows
-```python
- Virtualenv 3.11 created.
-```
+## By default python version 3.11 installed in this virtual environment
+. Because python 3.11 version installed globally on my machine.
+. to install different python version 
+. go to [python.org](https://www.python.org/downloads/) and install different  version globally
+. we are going to install python 3.12 separately
+. so have a look to our environment variables when two different python versions is installed
+<pre>
+C:\Users\aaaa\AppData\Local\Programs\Python\Python311\Scripts\;
+C:\Users\aaaa\AppData\Local\Programs\Python\Python311\;
+C:\Users\aaaa\AppData\Local\Programs\Python\Python312\Scripts\;
+C\Users\aaaa\AppData\Local\Programs\Python\Python312\;
+</pre>
 
-## If you want to create different python versions on your virtual environment you need to install atleast any 2 diffferent versions of python,e.g  ``python 3.9`` and python ``3.11`` separately.
+##  Now we want to install python 3.12 on our new virtual environment
+first run command
+```
+where python
+```
+- expected output
+<pre>
+C:\Users\DELL\AppData\Local\Programs\Python\Python3.12\python.exe
+C:\Users\DELL\AppData\Local\Programs\Python\Python3.11\python.exe
+</pre>
 
-### For checking Python's files location on pc
- write in terminal ``where python``.
- Result:
-```python
-C:\Python\python.exe
+## copy the path of python 3.12 version and create a new virtualenv
 ```
-```python
-C:\Users\DELL\AppData\Local\Programs\Python\Python39\python.exe
+python -m virtualenv -p C:\Users\DELL\AppData\Local\Programs\Python\Python3.12\python.exe Virtual3.12
 ```
-```python
-C:\Users\DELL\AppData\Local\Microsoft\WindowsApps\python.exe
+## Now again check python version
 ```
-### Creating another Virtual Environment with a different Python Version
-```python
- python -m virtualenv2 -p C:\Users\DELL\AppData\Local\Programs\Python\Python39\python.exe python3.9
+python --version
 ```
-### Activating this Virtual Environment
-```python
- C:\Users\DELL\Desktop\RoadMap\DJ\python3.9\Scripts\activate
-```
-### Checking the Python Version in this virtual environment
-```python
- python --version
-```
-which will now show ``python 3.9``
-##  Now we have 2 different virtual environments with different python versions
+## Congratulations You have python 3.12 on new virtual environment
 
-## After this we can 
-- deactivate this environment and switch between the 2 environments that we have
-- install python specific libraries version in the different environments
-### installing a specific version of the requests library using the Python package manager 'pip'
-```python
- python -m pip install requests==2.6.0
+## Install Django
+Now, that we have created a virtual environment, we are ready to install Django.
+**Note: Remember to install Django while you are in the `` virtual environment `` !**
+Django is installed using pip, with this command:
 ```
+(virtual3.12) C:\Users\aaaa\Desktop\Batches\Django_Development>pip install Django==5.0.1
+```
+## to check django install or not run this cmd
+```
+(virtual3.12) C:\Users\aaaa\Desktop\Batches\Django_Development>django-admin --version
+```
+<pre>
+    5.0.1
+</pre>
+## Deactivate virtualenv  
+```
+deactivate
+```
+## Now we deactivate virtual environment check django again 
+```
+django-admin --version
+```
+- Note we got error this error
+<pre>
+'django-admin' is not recognized as an internal or external command,
+operable program or batch file.
+</pre> 
+-  Why we got this error please have a research thank you!!!!
+
+#### Regards Muhammad Hashim
