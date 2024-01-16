@@ -1,20 +1,65 @@
+# Django
+Django is a Python framework that makes it easier to create web sites using Python.Django takes care of the difficult stuff so that
+you can concentrate on building your web applications.
+## Key Features of Django:
+- Django is a back-end server side web framework.
+- Django is free, open source and written in Python.
+- Django makes it easier to build web pages using Python.
 
-## Step1
-- Create a directory for example Dj
-- cd Dj or open in vs code
+## Django Requires Python
+To check if your system has Python installed, run this command in the command prompt:
+```
+python --version
+```
+## Pip python package manager like npm
+To install Django, you must use a package manager like pip, which is included in Python when simply install python.
+To check if your system has pip installed, run this command in the command prompt:
+```
+pip --version
+```
+## Virtual Environment
+It is suggested to have a dedicated virtual environment for each Django project, and one way to manage a virtual environment is ``virtualenv``package, which is included in Python
 
+## check virtualenv package is installed or not 
+```python 
+pip list
+```
+## if virtualenv is not installed that install this package
 ```python 
 pip install virtualenv
 ```
+## check version of virtualenv
 ```python 
 virtualenv --version
 ```
+## Now create a virtual environment
+- Create a directory for example Django-development
+- cd Django-development or open in vs code and type in cmd
 ```python
-python -m venv tutorial-env
+python -m virtualenv virtual
 ```
+## Now see a folder virtual is created and inside this virtual you will folders structure like this
+<pre>
+virtual
+    |____ lib
+    |        |___site-packages   
+    |            |___ .......
+    |____ Scripts
+    |           |____ ....... 
+    |____ pyvenv.cfg  
+</pre>
+## Then you have to activate the environment, by typing this command:
+- On Window
+```
+virtual\Scripts\activate
+
+```
+## Once the environment is activated, you will see this result in the command prompt:
 ```python
-python --version
+(virtual) C:\Users\aaaa\Desktop\Batches\Django_Development
 ```
+
+
 ```python
 C:\Users\DELL\Desktop\RoadMap\DJ\virtualenv.txt\Scripts\activate
 ```
