@@ -120,7 +120,7 @@ deactivate
 ```
 django-admin --version
 ```
-- Note we got error this error
+- Note we got error like this
 <pre>
 'django-admin' is not recognized as an internal or external command,
 operable program or batch file.
