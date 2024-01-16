@@ -1,4 +1,3 @@
-
 ## Step1
 - Create a directory for example Dj
 - cd Dj or open in vs code
