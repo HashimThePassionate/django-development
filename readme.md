@@ -54,8 +54,32 @@ virtual
 - On Window
 ```
 virtual\Scripts\activate
-
 ```
+## if you activate virtual environment and got error like this
+<pre>
+    virtual\Scripts\activate : File C:\Users\aaa#\Desktop\django\virtual\Scripts\activate.ps1 cannot be loaded because running scripts is disabled on this system. For more 
+information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ virtual\Scripts\activate
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+
+The error message indicates that PowerShell script execution is disabled on your system, and it's preventing the activation script from running. 
+To resolve this issue, you can change the execution policy to allow script execution
+</pre>
+
+## to solve this error follow these steps
+- First click on search icon
+- type Windows Powershell
+- right click on Windows Powershell icon and run as a administrator
+- type this command
+```
+Set-ExecutionPolicy RemoteSigned
+```
+- and finaly after running this command type "y"
+- now softly activate your virtual environment
+
 ## Once the environment is activated, you will see this result in the command prompt:
 ```python
 (virtual) C:\Users\aaaa\Desktop\Batches\Django_Development
