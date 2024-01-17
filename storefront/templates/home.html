@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="05"> -->
+    <title>Built-in Filters</title>
+</head>
+<body>
+<section>
+<h2>Google Chrome</h2>
+<p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+</section>
+<p>Hi,{{name|capfirst}} How are you? Your age is {{age|add:"3"}}</p>
+<pre>
+First list :{{list1}}
+
+Second list : {{list2}}
+
+The Sum of two list is {{list1|add:list2}}
+</pre>
+<p>{{django|addslashes}}</p>
+<p>"{{dj|center:"15"}}"</p>
+<p>{{D|date:"j s l n M Y"}}</p>
+<pre>
+Without sorted List:
+{{list3}} 
+
+With sorted list:
+{{list3|dictsort:"name"}}
+</pre>
+<p>This is just a simple paragraph</p>
+<p>if value is {{value}} than the output will be {{value|filesizeformat}} </p>
+<p>The {{list1}} list first item is {{list1|first}}</p>
+<p>The value {{f}}</p>
+<p>The value {{f|floatformat}}</p>
+<p>The value {{f|floatformat:"3"}}</p>
+<p>My name {{name|capfirst}} contains {{name|length}} letters</p>
+<pre>
+{{m}}
+
+{{m|linenumbers}}
+</pre>
+<pre>
+Name in Captial letter : {{nick}}
+
+Name in lower letter : {{nick|lower}}
+</pre>
+<p>Rendered text date: "{{D|date:"l" }}"</p>
+{% comment "Optional note" %}
+    <p>Commented out text with {{ create_date|date:"c" }}</p>
+{% endcomment %}
+</pre>
+<span style="font-size:30px;">Django Templates tags</span>
+<pre>{% autoescape off %}
+{{w}}
+{{w|escape}}
+{% endautoescape %}</pre>
+</body>
+</html>
