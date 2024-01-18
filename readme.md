@@ -93,6 +93,7 @@ urlpatterns = [
     path('home/',views.index),
 ]
 ```
+
 ### now run your server with simple this code
 ```python
 python manage.py runserver
@@ -111,6 +112,16 @@ You’re seeing this error because you have DEBUG = True in your Django settings
 - This error tells that you url is not found to fix this paste this url
 ```python
 http://127.0.0.1:8000/home/
+```
+## Add this command in ``` views.py ```
+```python
+  from django.shortcuts import render
+from datetime import datetime
+# Create your views here.
+def home(request):
+    
+    return render(request,'index.html', d)
+
 ```
 3. Now when you look the url pattern you, will see i mention /home/ after the url bcz when i define the url i clearly mention 'home/' in  urlpatterns variable so to access this we must mention this url
 http://127.0.0.1:8000/home/
