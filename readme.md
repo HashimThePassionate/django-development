@@ -1817,6 +1817,6 @@ python manage.py runserver
 
 # **Congradulations you use another project in your virtualenv**
 
-
+## Thankyou 
 
 
